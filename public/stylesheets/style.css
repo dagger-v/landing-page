@@ -3,6 +3,19 @@ body {
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
-  color: #00B7FF;
+  color: #00b7ff;
+}
+
+.content div {
+  border: 1px solid black;
+  margin: 200px 0;
+}
+
+.nav {
+  position: fixed;
 }
