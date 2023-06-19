@@ -6,58 +6,37 @@
     <script defer src="/javascripts/app.js"></script>
   </head>
   <body>
-    <div class="nav">
-      <ul class="item">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#plan">Choose A Plan</a></li>
-      </ul>
-    </div>
+    <%- include("navbar"); -%>
     <div class="content">
       <section id="home" class="zero">
-        <h1>Stop Dreaming About Having Your Own Website.</h1>
-        <p>Our platform can transform your ideas into digital reality.</p>
-        <div class="box show">Content</div>
-      </section>
-      <section class="one">
-        <h1><%= title %></h1>
-        <p><%= tagline %></p>
-        <button>Get Started</button>
-      </section>
-      <section id="service" class="two">
-        <h1>Our Services</h1>
-        <div class="box">
-          <h2>Purpose</h2>
-          <p>Built with your vision</p>
+        <div class="home">
+          <h1>Stop Dreaming About Having Your Own Website</h1>
+          <h1><%= tagline %></h1>
+          <button class="btn">Get Started</button>
         </div>
-        <div class="box">
+      </section>
+      <section>
+        <div class="left">
+          <div>
+            <h2>Purpose</h2>
+            <p>Built with your vision</p>
+          </div>
+          <div>
+            <img src="/images/vision01.png" alt="img" />
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="right">
           <h2>Authentication</h2>
           <p>From services you can trust</p>
         </div>
-        <div class="box">
+      </section>
+      <section>
+        <div class="left">
           <h2>User Interface</h2>
           <p>Accessible from any device</p>
         </div>
-      </section>
-      <section class="three">
-        <p>
-          "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam
-          aliquid libero repellat ad, architecto eum expedita possimus. Suscipit
-          aspernatur neque eaque, alias amet omnis soluta deleniti, modi tempore
-          possimus laborum. Quod placeat suscipit amet tenetur quidem deleniti,
-          minima ratione quam eveniet. Quam, officiis iusto omnis sint a labore
-          iure distinctio accusantium! Unde quas porro optio laboriosam
-          exercitationem ullam! Nesciunt, illum?"
-        </p>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
       </section>
       <section id="plan" class="four">
         <h1>It's time to Build Your Vision</h1>
@@ -94,49 +73,6 @@
             </ul>
           </div>
         </div>
-      </section>
-      <section class="five">
-        <h1>Still Not Convinced?</h1>
-        <h2>Take a look at what other people have said about us</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi
-          labore non ipsum rem eum? Recusandae in asperiores fugiat ullam,
-          suscipit odit placeat debitis doloribus porro excepturi doloremque
-          esse a.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi
-          labore non ipsum rem eum? Recusandae in asperiores fugiat ullam,
-          suscipit odit placeat debitis doloribus porro excepturi doloremque
-          esse a.
-        </p>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima modi
-          labore non ipsum rem eum? Recusandae in asperiores fugiat ullam,
-          suscipit odit placeat debitis doloribus porro excepturi doloremque
-          esse a.
-        </p>
-        <div class="box">Content</div>
-      </section>
-      <section id="contact" class="six">
-        <h1>Let's Get Started</h1>
-        <form action="">
-          <div>
-            <label for="email">Your Email</label>
-            <input type="email" name="email" id="email" required />
-          </div>
-
-          <div>
-            <label for="message">Your Message</label>
-            <textarea
-              name="message"
-              id="message"
-              cols="30"
-              rows="10"
-            ></textarea>
-          </div>
-          <input type="submit" />
-        </form>
       </section>
     </div>
   </body>

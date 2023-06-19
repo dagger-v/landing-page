@@ -1,17 +1,33 @@
-const boxes = document.querySelectorAll(".box");
+const lefts = document.querySelectorAll(".left");
+const rights = document.querySelectorAll(".right");
 
-window.addEventListener("scroll", checkBoxes);
+window.addEventListener("scroll", checkLefts);
+window.addEventListener("scroll", checkRights);
 
-function checkBoxes() {
+function checkLefts() {
   const triggerBottom = (window.innerHeight / 5) * 4;
 
-  boxes.forEach((box) => {
-    const boxTop = box.getBoundingClientRect().top;
+  lefts.forEach((left) => {
+    const leftTop = left.getBoundingClientRect().top;
 
-    if (boxTop < triggerBottom) {
-      box.classList.add("show");
+    if (leftTop < triggerBottom) {
+      left.classList.add("show");
     } else {
-      box.classList.remove("show");
+      left.classList.remove("show");
+    }
+  });
+}
+
+function checkRights() {
+  const triggerBottom = (window.innerHeight / 5) * 4;
+
+  rights.forEach((right) => {
+    const rightTop = right.getBoundingClientRect().top;
+
+    if (rightTop < triggerBottom) {
+      right.classList.add("show");
+    } else {
+      right.classList.remove("show");
     }
   });
 }
