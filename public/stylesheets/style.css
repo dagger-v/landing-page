@@ -40,7 +40,8 @@ section {
 }
 
 header {
-  background-color: rgba(255, 120, 196, 0.8);
+  background-color: #fff;
+  border-bottom: 1px solid black;
   position: fixed;
   top: 0;
   left: 0;
@@ -66,21 +67,27 @@ header li a {
 }
 
 .home {
-  background-color: #fff;
-  border: 2px solid #2b2730;
+  background-color: #525fe1;
+}
+
+.home div {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 800px;
-  height: 400px;
   margin: 30px;
+}
+
+.home p {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  color: #fff;
 }
 
 /* CSS */
 .btn {
-  background-color: #0a6bff;
-  border-radius: 4px;
+  background-color: #f86f03;
+  border-radius: 300px;
   border: 0;
   box-sizing: border-box;
   color: #fff;
@@ -115,14 +122,13 @@ header li a {
   margin: 10px 0;
 }
 
-.service h1 {
-  display: flex;
-  width: 100%;
-  align-items: left;
-  text-align: left;
+.box h2 {
+  margin-top: 5px;
 }
 
-.service > div:nth-child(1) {
+.tagline p {
+  font-size: 52px;
+  padding-bottom: 2em;
   width: 60vw;
 }
 

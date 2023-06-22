@@ -3,20 +3,32 @@
   <head>
     <title><%= title %></title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <script defer src="/javascripts/app.js"></script>
   </head>
   <body>
     <%- include("navbar"); -%>
     <div class="content">
-      <section id="home">
-        <div class="home">
-          <h1>Stop Dreaming About Having Your Own Website</h1>
+      <section class="home" id="home">
+        <div>
+          <p>
+            Stop Only Dreaming About <br />
+            Having Your Own Website
+          </p>
           <button class="btn">Get Started</button>
         </div>
       </section>
       <section class="service">
         <div class="tagline">
-          <h1><%= tagline %></h1>
+          <p>
+            Build Your Vision. <br />
+            Share Your Story.
+          </p>
         </div>
         <div class="box">
           <div>
