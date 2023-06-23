@@ -151,7 +151,7 @@ header li a {
 }
 
 .business {
-  background-color: #ffe4a7;
+  background-color: #f5efe7;
 }
 
 .business__content {
@@ -172,12 +172,21 @@ header li a {
 
 .business__content div li {
   font-size: 22px;
-  padding: 8px 0;
+  margin: 15px 0;
 }
 
 .business__content div li:hover {
-  cursor: pointer;
   color: red;
+  cursor: pointer;
+}
+
+#image-container {
+  transition: opacity 2s ease-in-out;
+}
+
+#main-image {
+  transition: opacity 2s ease-in-out;
+  -webkit-transition: opacity 2s ease-in-out; /* For Safari support */
 }
 
 .tagline p {

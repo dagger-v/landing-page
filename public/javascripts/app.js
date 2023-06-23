@@ -15,3 +15,8 @@ function checkboxes() {
     }
   });
 }
+
+function changeImage(imageSrc) {
+  let image = document.getElementById("main-image");
+  image.src = imageSrc;
+}
