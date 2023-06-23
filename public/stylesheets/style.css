@@ -19,7 +19,8 @@ html {
 }
 
 a {
-  color: #00b7ff;
+  color: white;
+  text-decoration: none;
 }
 
 img {
