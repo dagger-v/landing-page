@@ -78,13 +78,24 @@
               <li onmouseover="changeImage('/images/vision03.png')">
                 Online Store
               </li>
-              <li>Project Management</li>
-              <li>Content Creation</li>
-              <li>Freelancing</li>
+              <li onmouseover="changeImage('/images/vision04.png')">
+                Project Management
+              </li>
+              <li onmouseover="changeImage('/images/vision05.png')">
+                Content Creation
+              </li>
+              <li onmouseover="changeImage('/images/vision06.png')">
+                Freelancing
+              </li>
             </ul>
           </div>
           <div id="image-container">
-            <img id="main-image" src="/images/vision01.png" alt="img" />
+            <img
+              id="main-image"
+              src="/images/vision01.png"
+              alt="img"
+              onload="handleImageLoad()"
+            />
           </div>
         </div>
       </section>
