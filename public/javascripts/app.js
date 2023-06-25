@@ -3,7 +3,7 @@ const boxes = document.querySelectorAll(".box");
 window.addEventListener("scroll", checkboxes);
 
 function checkboxes() {
-  const triggerBottom = (window.innerHeight / 5) * 4;
+  const triggerBottom = (window.innerHeight / 5) * 6;
 
   boxes.forEach((box) => {
     const boxTop = box.getBoundingClientRect().top;
